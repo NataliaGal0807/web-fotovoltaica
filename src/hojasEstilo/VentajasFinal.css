@@ -1,0 +1,140 @@
+/* Variables de color (asumiendo que se definen en Globales.css) */
+:root {
+    --color-solar-primary: #FF9900;
+    --color-text-light: #FFFFFF;
+    --color-text-dark: #2c3e50;
+    --color-fondo-dark: #2c3e50;
+}
+
+/* -------------------------------------- */
+/* SECCIÓN VENTAJAS */
+/* -------------------------------------- */
+
+.ventajas-section {
+    background-color: var(--color-fondo-dark);
+    color: var(--color-text-light);
+    padding: 60px 0;
+    text-align: center;
+}
+
+.ventajas-title {
+    /* 🔴 TIPOGRAFÍA: Reducido de 2em a 1.8rem */
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+
+/* -------------------------------------- */
+/* DISEÑO FLEXBOX PARA LOS ÍCONOS */
+/* -------------------------------------- */
+
+.ventajas-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ventaja-item {
+    width: 30%;
+    max-width: 300px;
+}
+
+.ventaja-icon {
+    /* 🔴 TIPOGRAFÍA: Reducido drásticamente de 4em a 3rem */
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.ventaja-item h3 {
+    /* 🔴 TIPOGRAFÍA: Reducido de 1.3em a 1.2rem */
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.ventaja-item p {
+    /* 🔴 TIPOGRAFÍA: Usamos 1rem (o 0.95rem para ser más pequeño que el título) */
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+/* -------------------------------------- */
+/* CTA FINAL DE ASESORÍA */
+/* -------------------------------------- */
+
+.cta-final-bloque {
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    margin-top: 40px;
+    /* Aseguramos que el bloque no sea demasiado ancho */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-final-title {
+    /* 🔴 TIPOGRAFÍA: Reducido de 1.8em a 1.6rem */
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.cta-final-subtitle {
+    /* 🔴 TIPOGRAFÍA: Reducido de 1.1em a 1rem */
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.cta-final-button {
+    background-color: var(--color-solar-primary);
+    color: var(--color-text-dark);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    /* 🔴 TIPOGRAFÍA: Reducido de 1.1em a 1rem */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-final-button:hover {
+    background-color: #ffb84d;
+}
+
+/* -------------------------------------- */
+/* RESPONSIVE DESIGN PARA MÓVILES */
+/* -------------------------------------- */
+
+@media (max-width: 600px) {
+    .ventajas-section {
+        padding: 40px 0;
+    }
+
+    .ventajas-title {
+        font-size: 1.5rem;
+    }
+
+    .ventajas-grid {
+        /* Desactiva el gap horizontal en pantallas muy pequeñas */
+        gap: 20px;
+    }
+
+    .ventaja-item {
+        /* Permite que cada ítem ocupe casi todo el ancho para apilarlos */
+        width: 80%;
+        max-width: none;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    .ventaja-icon {
+        font-size: 2.5rem;
+        /* Iconos más pequeños en móviles */
+    }
+
+    .cta-final-title {
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,121 @@
+/* Variables de color (Idealmente en Globales.css) */
+:root {
+    --color-solar-primary: #FF9900;
+    --color-text-light: #FFFFFF;
+    --color-text-dark: #2c3e50;
+    --color-fondo-dark: #2c3e50;
+    --color-gris-claro: #f4f4f4;
+}
+
+/* -------------------------------------- */
+/* UTILERÍA (Podría ir en Globales.css) */
+/* -------------------------------------- */
+
+.container-hero {
+    /* Mantenemos el centrado del contenido dentro del Hero */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* -------------------------------------- */
+/* ESTILOS HERO SECTION */
+/* -------------------------------------- */
+
+.hero {
+    /* La ruta de la imagen es correcta si el archivo CSS está en HojasEstilo */
+    background-image: url('../imagenes/fondoRural.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 500px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* Centrado vertical */
+    justify-content: center;
+}
+
+.hero-overlay {
+    /* Capa oscura para asegurar la legibilidad del texto */
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 100%;
+    /* Mantenemos el padding vertical para el espaciado interno */
+    padding: 100px 0;
+}
+
+/* -------------------------------------- */
+/* AJUSTE DE TIPOGRAFÍA: USANDO REM Y REDUCCIÓN */
+/* -------------------------------------- */
+
+.hero-title {
+    /* 🔴 CAMBIO CLAVE: Reducido de 2.8em a 2.5rem para mejor escala */
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-text-light);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    /* 🔴 CAMBIO CLAVE: Reducido de 1.3em a 1.2rem */
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+    margin-bottom: 40px;
+}
+
+/* -------------------------------------- */
+/* BOTÓN CTA PRINCIPAL */
+/* -------------------------------------- */
+
+.cta-principal {
+    background-color: var(--color-solar-primary);
+    color: var(--color-text-dark);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    /* 🔴 CAMBIO CLAVE: Reducido de 1.2em a 1.1rem */
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-principal:hover {
+    background-color: #ffb84d;
+    transform: translateY(-2px);
+}
+
+/* -------------------------------------- */
+/* RESPONSIVE DESIGN PARA MÓVILES */
+/* -------------------------------------- */
+
+@media (max-width: 600px) {
+    .hero {
+        min-height: 400px;
+        /* Reducir la altura en móviles */
+    }
+
+    .hero-title {
+        /* Reducción drástica del título en pantallas pequeñas */
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .cta-principal {
+        /* Permite que el botón se extienda un poco más en móviles */
+        width: 95%;
+        padding: 15px 15px;
+        font-size: 1rem;
+    }
+}

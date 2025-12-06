@@ -1,0 +1,107 @@
+/* Estilos para el contenedor principal del resumen */
+.resumen-resultados {
+    background-color: #e8f5e9;
+    /* Un verde claro para destacar */
+    border-left: 5px solid #00a18a;
+    padding: 25px 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.resumen-resultados h3 {
+    color: #004d40;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.resumen-intro {
+    font-size: 0.95rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Grid para las tarjetas de resumen */
+.resumen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.resumen-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.resumen-card h4 {
+    color: #004d40;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.resumen-card h4::before {
+    font-size: 1.2em;
+    color: #ff9900;
+    /* Naranja para los iconos */
+}
+
+.resumen-card h4:nth-child(1)::before {
+    content: "⚡";
+}
+
+/* Rayo */
+.resumen-card h4:nth-child(2)::before {
+    content: "💰";
+}
+
+/* Bolsa de dinero */
+.resumen-card h4:nth-child(3)::before {
+    content: "✅";
+}
+
+/* Check */
+
+
+.resumen-card p {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.resumen-card p strong {
+    color: #004d40;
+}
+
+/* Call to action final del resumen */
+.resumen-call-to-action {
+    font-size: 1rem;
+    color: #004d40;
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 600;
+    line-height: 1.5;
+    background-color: #c8e6c9;
+    /* Fondo un poco más oscuro para CTA */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Responsive para el resumen */
+@media (max-width: 768px) {
+    .resumen-grid {
+        grid-template-columns: 1fr;
+        /* Una columna en móviles */
+    }
+}

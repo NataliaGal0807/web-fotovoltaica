@@ -1,0 +1,145 @@
+/* Variables de color (asumiendo que se definen en Globales.css) */
+/*
+:root {
+    --color-solar-primary: #FF9900; 
+    --color-text-dark: #2c3e50;
+    --color-gris-claro: #f4f4f4;
+}
+*/
+
+/* -------------------------------------- */
+/* CONTENEDOR PRINCIPAL DE LA CALCULADORA */
+/* -------------------------------------- */
+
+.calculadora-section-wrapper {
+    /* Mantenemos el efecto de flotación para escritorio */
+    background-color: white;
+    /* Reducimos el padding ligeramente para compactar */
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    max-width: 380px;
+    /* 🔴 MARGEN ASIMÉTRICO (ESCRITORIO) */
+    /* Usamos un valor más pequeño en margin-top (-60px) y un margen izquierdo negativo */
+    margin: -30px 0 30px -5%;
+    /* -5% para sacarlo del flujo del main-flex-container y moverlo al borde */
+
+    position: relative;
+    z-index: 20;
+    text-align: left;
+}
+
+.calculadora-title {
+    color: var(--color-text-dark);
+    /* 🔴 TIPOGRAFÍA: Usamos rem y ajustamos el tamaño */
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--color-gris-claro);
+    padding-bottom: 10px;
+}
+
+/* -------------------------------------- */
+/* ESTILOS DE FORMULARIO E INPUTS */
+/* -------------------------------------- */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    /* 🔴 TIPOGRAFÍA: Usamos rem para las etiquetas */
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+select,
+.input-field {
+    width: 100%;
+    padding: 10px;
+    /* Aseguramos que el texto dentro del input también use una base rem controlada */
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+/* ... (Otros estilos de inputs, slider y radio-group se mantienen sin cambios mayores) ... */
+
+/* -------------------------------------- */
+/* RESULTADOS Y CONVERSIÓN FINAL */
+/* -------------------------------------- */
+
+.resultado-mock {
+    background-color: var(--color-gris-claro);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.instruccion-final {
+    /* 🔴 TIPOGRAFÍA: Usamos rem */
+    font-size: 0.9rem;
+    color: var(--color-text-dark);
+    margin-top: 15px;
+}
+
+.cta-calculadora {
+    background-color: var(--color-solar-primary);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    /* 🔴 TIPOGRAFÍA: Usamos rem */
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-calculadora:hover {
+    background-color: #e68a00;
+}
+
+
+/* -------------------------------------- */
+/* 📱 RESPONSIVE DESIGN (DESACTIVAR FLOTACIÓN EN MÓVILES) */
+/* -------------------------------------- */
+
+@media (max-width: 768px) {
+    .calculadora-section-wrapper {
+        /* 1. Resetear el margen de flotación: Volver a valores normales */
+        margin-top: 30px;
+        /* Ya no flota, se queda en el flujo normal */
+        margin-left: auto;
+        /* Anula el -5% */
+        margin-right: auto;
+        /* Centra el bloque en el espacio disponible */
+
+        /* 2. Permitir que ocupe más ancho en pantallas medianas */
+        max-width: 90%;
+        width: 100%;
+        padding: 20px;
+        /* Reducimos el padding para pantallas pequeñas */
+
+        /* 3. Aseguramos que no se salga de los límites del viewport */
+        box-sizing: border-box;
+    }
+
+    .calculadora-title {
+        font-size: 1.4rem;
+    }
+
+    .cta-calculadora {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,79 @@
+/* ============================= */
+/*      SECCIÓN SOPORTE TÉCNICO  */
+/* ============================= */
+
+.soporte-tecnico-section {
+    padding: 80px 20px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+/* TITULOS */
+.st-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.st-subtitle {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* GRID DE TARJETAS */
+.st-grid {
+    margin-top: 40px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.st-card {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.st-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ============================= */
+/*      BOTÓN WHATSAPP VERDE      */
+/* ============================= */
+
+.st-btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+    padding: 12px 25px;
+
+    background: #78ffaa;
+    /* Verde WhatsApp */
+    color: white;
+
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+    flex-direction: column;
+}
+
+.st-btn-whatsapp:hover {
+    filter: brightness(1.08);
+    transform: translateY(-2px);
+}
+
+/* LOGO DEL ICONO DE WHATSAPP */
+.st-wsp-icon {
+    width: 125px;
+    height: auto;
+    object-fit: contain;
+}

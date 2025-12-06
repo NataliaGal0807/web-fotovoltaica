@@ -1,0 +1,55 @@
+/* Variables de ejemplo (Recomendado tenerlas en un Globales.css) */
+:root {
+    --color-fondo-principal: #f4f4f4;
+    /* Gris claro suave */
+}
+
+html {
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Contenedor Principal (App) */
+.App {
+    width: 100%;
+    min-height: 100vh;
+    /* Usar la variable de fondo */
+    background-color: var(--color-fondo-principal);
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2. Contenedor de Centrado Genérico */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Centra el contenido */
+    /* Se eliminan las propiedades Flexbox de aquí */
+}
+
+/* 3. Contenedor del Layout Lado a Lado (Calculadora y Beneficios) */
+.main-flex-container {
+    width: 100%;
+    display: flex;
+    /* La distribución lado a lado es correcta */
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* 🔑 CORRECCIÓN CLAVE: Empujar el contenido hacia la derecha */
+    /* Este padding compensa el margen negativo del -5% de la calculadora.
+       Sin este padding, todo el contenido se siente "movido" a la izquierda. */
+    padding-left: 5%;
+}
+
+/* 4. Responsive: Para Móviles y Tablets (romper el diseño lado a lado) */
+/* Rompemos el layout flexible a menos de 768px para que los ítems se apilen */
+@media (max-width: 768px) {
+    .main-flex-container {
+        /* Desactivar Flexbox en columna en móviles */
+        flex-direction: column;
+        align-items: center;
+        /* Eliminar el padding compensatorio en móviles */
+        padding-left: 0;
+    }
+}

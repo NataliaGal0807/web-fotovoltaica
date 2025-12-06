@@ -1,0 +1,74 @@
+/* Variables de color */
+:root {
+    --color-solar-primary: #FF9900;
+    --color-text-dark: #2c3e50;
+    --color-gris-claro: #f4f4f4;
+}
+
+/* -------------------------------------- */
+/* CONTENEDOR DE LA SECCIÓN */
+/* -------------------------------------- */
+
+.beneficios-hibridos-section {
+    /* Ocupa el espacio restante junto a la calculadora. 
+       El contenedor padre en App.jsx debe usar display: flex para el layout lado a lado.
+    */
+    width: 60%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 120px;
+    /* Alinea visualmente con el texto de la calculadora */
+}
+
+.beneficios-hibridos-title {
+    color: var(--color-text-dark);
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* -------------------------------------- */
+/* DISEÑO DE LAS TARJETAS (GRID) */
+/* -------------------------------------- */
+
+.beneficios-grid {
+    display: grid;
+    /* Crea un layout de 2 columnas con espacio entre ellas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.beneficio-card {
+    background-color: var(--color-gris-claro);
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-solar-primary);
+    /* Línea de color para destacar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-align: left;
+}
+
+.beneficio-card:hover {
+    transform: translateY(-5px);
+    /* Pequeño efecto de elevación al pasar el ratón */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+}
+
+.card-content {
+    font-size: 0.8em;
+    color: #555;
+}

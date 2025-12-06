@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/%3Cweb-fotovoltaica%3E/static/css/main.fcd862d4.css",
+    "main.js": "/%3Cweb-fotovoltaica%3E/static/js/main.a6c8d426.js",
+    "static/js/453.d2dc34ff.chunk.js": "/%3Cweb-fotovoltaica%3E/static/js/453.d2dc34ff.chunk.js",
+    "static/media/logo.png": "/%3Cweb-fotovoltaica%3E/static/media/logo.60a8804fae93a8505cfb.png",
+    "static/media/logoSinFondo.png": "/%3Cweb-fotovoltaica%3E/static/media/logoSinFondo.3c8be5a6881ba76381d1.png",
+    "static/media/whatsapp-logo-r.png": "/%3Cweb-fotovoltaica%3E/static/media/whatsapp-logo-r.5fc58bd4ba0838578dfb.png",
+    "static/media/fondoRural.jpg": "/%3Cweb-fotovoltaica%3E/static/media/fondoRural.b92e9ebed74638b85801.jpg",
+    "index.html": "/%3Cweb-fotovoltaica%3E/index.html",
+    "main.fcd862d4.css.map": "/%3Cweb-fotovoltaica%3E/static/css/main.fcd862d4.css.map",
+    "main.a6c8d426.js.map": "/%3Cweb-fotovoltaica%3E/static/js/main.a6c8d426.js.map",
+    "453.d2dc34ff.chunk.js.map": "/%3Cweb-fotovoltaica%3E/static/js/453.d2dc34ff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcd862d4.css",
+    "static/js/main.a6c8d426.js"
+  ]
+}

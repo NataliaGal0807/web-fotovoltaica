@@ -74,3 +74,12 @@
     align-items: center;
     justify-content: space-between;
 }
+
+/* MODO MOBILE */
+.navbar-links {
+    transition: all 0.3s ease;
+}
+
+.navbar-links.open {
+    display: flex !important;
+}

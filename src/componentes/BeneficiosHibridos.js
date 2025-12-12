@@ -119,16 +119,16 @@ const BeneficiosHibridos = () => {
                         </button>
 
                         {/* Contenido del modal */}
-                        <div style={{ textAlign: 'left' }}>
-                            <span style={{ fontSize: '2rem', display: 'block', marginBottom: '0.5rem' }}>{modalData.icono}</span>
-                            <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: '#FF9900' }}>{modalData.titulo}</h2>
-                            <p style={{ fontSize: '1rem', lineHeight: '1.6', marginBottom: '1.5rem' }}>
+                        <div className="modal-body">
+                            <span className="modal-icon">{modalData.icono}</span>
+                            <h2 className="modal-title">{modalData.titulo}</h2>
+                            <p className="modal-resumen">
                                 <strong>Resumen:</strong> {modalData.contenido}
                             </p>
 
-                            {/* Información detallada */}
-                            <p style={{ fontSize: '0.9rem', color: '#555' }}>
-                                <strong>Detalle Ampliado:</strong>modalData.detalle
+                            {/* ¡ESTO ES LO IMPORTANTE! La variable va entre llaves {} */}
+                            <p className="modal-detalle">
+                                <strong>Detalle Ampliado:</strong> {modalData.detalle}
                             </p>
                         </div>
 

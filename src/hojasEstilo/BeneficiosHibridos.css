@@ -5,21 +5,16 @@
     --color-gris-claro: #f4f4f4;
 }
 
-/* -------------------------------------- */
 /* CONTENEDOR DE LA SECCIÓN */
-/* -------------------------------------- */
-
 .beneficios-hibridos-section {
-    /* Ocupa el espacio restante junto a la calculadora. 
-       El contenedor padre en App.jsx debe usar display: flex para el layout lado a lado.
-    */
     width: 60%;
     padding: 20px;
     margin-top: 50px;
     margin-left: 120px;
-    /* Alinea visualmente con el texto de la calculadora */
+    /* Ajusta según el layout con la calculadora */
 }
 
+/* Título */
 .beneficios-hibridos-title {
     color: var(--color-text-dark);
     font-size: 1.5em;
@@ -27,23 +22,19 @@
     text-align: left;
 }
 
-/* -------------------------------------- */
-/* DISEÑO DE LAS TARJETAS (GRID) */
-/* -------------------------------------- */
-
+/* GRID DE TARJETAS */
 .beneficios-grid {
     display: grid;
-    /* Crea un layout de 2 columnas con espacio entre ellas */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
+/* TARJETAS */
 .beneficio-card {
     background-color: var(--color-gris-claro);
     padding: 20px;
     border-radius: 8px;
     border-left: 5px solid var(--color-solar-primary);
-    /* Línea de color para destacar */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -52,7 +43,6 @@
 
 .beneficio-card:hover {
     transform: translateY(-5px);
-    /* Pequeño efecto de elevación al pasar el ratón */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -69,6 +59,53 @@
 }
 
 .card-content {
-    font-size: 0.8em;
+    font-size: 0.9em;
     color: #555;
+}
+
+/* ========================= */
+/* MEDIA QUERIES RESPONSIVE */
+/* ========================= */
+@media (max-width: 1024px) {
+    .beneficios-hibridos-section {
+        width: 70%;
+        margin-left: 20px;
+        margin-top: 40px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .beneficios-hibridos-section {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+        /* Una sola columna en móviles */
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .beneficios-hibridos-title {
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.1em;
+    }
+
+    .card-content {
+        font-size: 0.85em;
+    }
+
+    .card-icon {
+        font-size: 1.3em;
+    }
 }

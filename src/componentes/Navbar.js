@@ -38,13 +38,13 @@ const Navbar = () => {
                     <img src={logo} alt="Logo" className="navbar-logo" />
                 </div>
 
-                {/* MENÚ A LA DERECHA */}
+                {/* MENÚ */}
                 <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
                     <li><a onClick={() => scrollToSection("calculadora")}>Calculadora Solar</a></li>
                     <li><a onClick={() => scrollToSection("beneficios")}>Beneficios</a></li>
-                    <li onClick={() => scrollToSection("soporte-tecnico")}>Soporte Técnico</li>
-                    <li><a onClick={() => scrollToSection("contacto")}>Contacto</a></li>
+                    <li><a onClick={() => scrollToSection("soporte-tecnico")}>Soporte Técnico</a></li>
                 </ul>
+
 
                 {/* MENÚ HAMBURGUESA */}
                 <div className="navbar-toggle" onClick={toggleMenu}>

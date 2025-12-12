@@ -1,6 +1,8 @@
 /* Variables de ejemplo (Recomendado tenerlas en un Globales.css) */
 :root {
     --color-fondo-principal: #f4f4f4;
+    --color-text-dark: #222;
+
     /* Gris claro suave */
 }
 

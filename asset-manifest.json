@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/web-fotovoltaica/static/css/main.54f43519.css",
-    "main.js": "/web-fotovoltaica/static/js/main.741a153c.js",
+    "main.css": "/web-fotovoltaica/static/css/main.f2561e47.css",
+    "main.js": "/web-fotovoltaica/static/js/main.2af20c94.js",
     "static/js/453.d2dc34ff.chunk.js": "/web-fotovoltaica/static/js/453.d2dc34ff.chunk.js",
     "static/media/logo.png": "/web-fotovoltaica/static/media/logo.60a8804fae93a8505cfb.png",
     "static/media/logoSinFondo.png": "/web-fotovoltaica/static/media/logoSinFondo.3c8be5a6881ba76381d1.png",
     "static/media/whatsapp-logo-r.png": "/web-fotovoltaica/static/media/whatsapp-logo-r.5fc58bd4ba0838578dfb.png",
     "static/media/fondoRural.jpg": "/web-fotovoltaica/static/media/fondoRural.b92e9ebed74638b85801.jpg",
     "index.html": "/web-fotovoltaica/index.html",
-    "main.54f43519.css.map": "/web-fotovoltaica/static/css/main.54f43519.css.map",
-    "main.741a153c.js.map": "/web-fotovoltaica/static/js/main.741a153c.js.map",
+    "main.f2561e47.css.map": "/web-fotovoltaica/static/css/main.f2561e47.css.map",
+    "main.2af20c94.js.map": "/web-fotovoltaica/static/js/main.2af20c94.js.map",
     "453.d2dc34ff.chunk.js.map": "/web-fotovoltaica/static/js/453.d2dc34ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54f43519.css",
-    "static/js/main.741a153c.js"
+    "static/css/main.f2561e47.css",
+    "static/js/main.2af20c94.js"
   ]
 }

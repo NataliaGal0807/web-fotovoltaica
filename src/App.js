@@ -7,7 +7,7 @@ import VentajasFinal from './componentes/VentajasFinal';
 import BeneficiosHibridos from './componentes/BeneficiosHibridos';
 import Navbar from './componentes/Navbar';
 import SoporteTecnico from './componentes/SoporteTecnico';
-
+import HeroSimulador from './componentes/HeroSimulador';
 function App() {
   return (
     // Contenedor principal de toda la aplicación
@@ -17,6 +17,7 @@ function App() {
 
       {/* 1. SECCIÓN SUPERIOR: Hero (Con imagen de fondo) */}
       <HeaderHero />
+      <HeroSimulador />
 
       {/* 2. CONTENIDO PRINCIPAL: La Calculadora y Argumentos de Venta (Diseño Asimétrico) */}
       <main className="main-content-wrapper">
@@ -33,7 +34,7 @@ function App() {
 
         </div>
       </main>
-
+      {/*<HomeVisual />*/}
       {/* 3. SECCIÓN DE CIERRE Y CONFIANZA */}
       {/* Esta sección no va dentro de .container para que ocupe el 100% del ancho (fondo oscuro) */}
       <VentajasFinal />

@@ -1,0 +1,232 @@
+/* ============================= */
+/* HERO SIMULADOR – ESTILO FINAL */
+/* ============================= */
+
+.hero-simulador {
+    padding: 70px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+/* TÍTULO */
+.hero-simulador h2 {
+    font-size: 1.9rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* ESTADO GENERAL */
+.estado {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.estado span {
+    font-weight: bold;
+}
+
+.rojo {
+    color: #c0392b;
+}
+
+.verde {
+    color: #27ae60;
+}
+
+/* ============================= */
+/* DISPOSITIVOS (MODO JUEGO) */
+/* ============================= */
+
+.dispositivos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.dispositivo {
+    padding: 25px;
+    border-radius: 14px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* APAGADO */
+.dispositivo.apagado {
+    background: #ececec;
+    color: #777;
+}
+
+/* ACTIVO */
+.dispositivo.activo {
+    background: #fff3e0;
+    border-color: #ff9900;
+}
+
+/* HOVER DISPOSITIVOS */
+.dispositivo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* ICONOS */
+.icono {
+    display: block;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+/* ============================= */
+/* BOTÓN PRINCIPAL */
+/* ============================= */
+
+.btn-principal {
+    background: #ff9900;
+    color: #2c3e50;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-principal:hover {
+    background: #f1c40f;
+    transform: scale(1.06);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================= */
+/* BOTÓN SOPORTE TÉCNICO */
+/* ============================= */
+
+.btn-soporte {
+    background: #2ecc71;
+    color: #ffffff;
+    padding: 14px 26px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-soporte:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* ============================= */
+/* MENSAJE DE RESULTADO */
+/* ============================= */
+
+.mensaje {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+/* ============================= */
+/* BOTÓN REINICIAR */
+/* ============================= */
+
+.btn-reiniciar {
+    margin-top: 15px;
+    background: transparent;
+    border: 2px solid #bdc3c7;
+    color: #555;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-reiniciar:hover {
+    background: #ecf0f1;
+    color: #2c3e50;
+    transform: scale(1.04);
+}
+
+/* ============================= */
+/* BOTÓN DE ACCIÓN FINAL */
+/* ============================= */
+
+.btn-accion-final {
+    margin-top: 35px;
+    background: linear-gradient(135deg, #ff9900, #f1c40f);
+    color: #2c3e50;
+    padding: 18px 40px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* HOVER */
+.btn-accion-final:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+/* TEXTO SECUNDARIO */
+.texto-ayuda {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.st-btn-whatsapp {
+    margin-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+
+    background: #ffffff;
+    color: #1f7a4f;
+
+    padding: 16px 34px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 40px;
+    border: 3px solid #25d366;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* HOVER */
+.st-btn-whatsapp:hover {
+    background: #eafff3;
+    transform: scale(1.06);
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.3);
+}
+
+/* CLICK */
+.st-btn-whatsapp:active {
+    transform: scale(0.97);
+}
+
+/* LOGO */
+.st-wsp-icon {
+    width: 30px;
+    height: 30px;
+}

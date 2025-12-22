@@ -1,0 +1,99 @@
+.home-visual {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    color: #f8f8f8;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #c1c1c1;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.icono-sol {
+    font-size: 4rem;
+    animation: girar 6s linear infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.hero button {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    background: #ff9900;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 60px 0;
+    flex-wrap: wrap;
+}
+
+.beneficio {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 180px;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ahorro h2 {
+    font-size: 1.5rem;
+}
+
+.monto {
+    font-size: 2.5rem;
+    color: #27ae60;
+    font-weight: bold;
+    animation: pulso 1.5s infinite;
+}
+
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
